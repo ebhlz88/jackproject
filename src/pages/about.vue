@@ -2,7 +2,7 @@
   <div class="about" style="min-height: 650px">
         <div class="flex-column">
            <div><h4>About</h4></div>
-           <p class="abouttext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam natus debitis labore molestiae assumenda culpa. Distinctio, unde. Nemo tempora doloremque, rem enim perspiciatis, dolore possimus necessitatibus unde esse magni voluptatibus sapiente quidem facere et deserunt, reprehenderit cum maiores corrupti omnis magnam beatae. Sit, mollitia nulla. Tempore ratione beatae impedit quas. Est, id debitis? Ex dignissimos explicabo enim nulla rerum eveniet assumenda praesentium, est mollitia ad optio neque quae obcaecati modi voluptatibus expedita vero labore id. Quis iusto velit a quos magnam illo? At consectetur expedita asperiores ipsa. In, cupiditate! Maxime repellat facere quia illum, vero repellendus alias vitae fuga nulla.</p>
+           <p class="abouttext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eveniet quod assumenda doloremque cumque mollitia, iste vero explicabo quas modi incidunt quam dicta odit quos placeat magni beatae rerum nisi totam temporibus consectetur facilis a. Numquam et corporis, laboriosam perferendis quia possimus quaerat tempore earum expedita, distinctio voluptatibus qui voluptatem beatae suscipit facere ipsa, fugit atque sapiente aspernatur! Odio ab voluptas, fuga beatae autem ad quas eius est et facere id praesentium unde! Sequi blanditiis amet in fugit harum ab placeat cum omnis fuga quo maxime, mollitia, dolorem voluptates quibusdam necessitatibus rem iure exercitationem cumque accusamus error? Laboriosam laudantium ipsam ullam dignissimos omnis non rem, aspernatur praesentium dolorum sunt consequatur! Ipsa cupiditate officiis molestiae impedit! Impedit, dignissimos? Voluptate magni nobis, recusandae sit odio perspiciatis consequuntur aspernatur dolore, mollitia illum eius unde quos libero. Distinctio mollitia iste corrupti dolorum sit architecto similique nihil beatae, nulla, dolor tempore? Optio consequatur ea assumenda fugit vitae dolorem consequuntur, dolor nesciunt magnam iusto aliquam ullam, consectetur mollitia maiores veritatis quos delectus explicabo quam sint! Autem reiciendis, illum repellendus, nemo magnam exercitationem at unde soluta facilis ab fuga aut. Unde nisi, debitis tempora, suscipit, ullam non voluptas veniam provident repudiandae dolorum obcaecati? Id quas rerum delectus?</p>
             <h6>SKILLS</h6>
             <div class="flex-row icon">
                 <div class="flex-column ">
@@ -42,7 +42,11 @@ export default {
     max-width: 80%;
 }       
 .icon .flex-column{
-    margin: 0px 10px;
+    margin: 0px 15px;
+}
+.icon .flex-column img{
+    height: 100px;
+
 }
 
 @media screen and (max-width: 412px) {
@@ -52,8 +56,9 @@ export default {
 .icon .flex-column{
     margin: 0px 2px;
 }
-.icon .flex-column img{
-    height: 80px;
+.icon .flex-column img {
+  height: 83px;
+  padding: 10px;
 }
 }
 

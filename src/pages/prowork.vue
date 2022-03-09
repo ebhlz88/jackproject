@@ -1,16 +1,36 @@
 <template>
-  <div class="prowork" style="min-height: 650px">
+  <div class="prowork" style="min-height: 700px">
         <div class="flex-column">
             <h4>PROFESSIONAL WORK</h4>
             <div class="flex-row smimg">
                 <div class="flex-row">
+                    <div class="relative">
                     <img class="proimg" src="../assets/test.png" alt="">
+                    <div class="bottom-left">Image Name</div>
+                    <span class="overlay"></span>
+                    </div>
+                    <div class="relative">
                     <img class="proimg" src="../assets/test.png" alt="">
+                    <div class="bottom-left">Image Name</div>
+                    <span class="overlay"></span>
+                    </div>
+                    <div class="relative">
                     <img class="proimg" src="../assets/test.png" alt="">
+                    <div class="bottom-left">Image Name</div>
+                    <span class="overlay"></span>
+                    </div>
                 </div>
                 <div class="flex-row">
-                <img class="proimg" src="../assets/test.png" alt="">
-                <img class="proimg" src="../assets/test.png" alt="">
+                <div class="relative">
+                    <img class="proimg" src="../assets/test.png" alt="">
+                    <div class="bottom-left">Image Name</div>
+                    <span class="overlay"></span>
+                    </div>
+                <div class="relative">
+                    <img class="proimg" src="../assets/test.png" alt="">
+                    <div class="bottom-left">Image Name</div>
+                    <span class="overlay"></span>
+                    </div>
                 </div>
             </div>
             <div class="flex-row promain">
@@ -29,24 +49,24 @@
                 </div>
                 <div class="flex-column prodesc">
                     <div class="flex-row ">
-                        <p class="proheader">PROJECT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="proheader">PROJECT</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <p class="protext">ViralGrowthC.panel</p>
                     </div>
                     <div class="flex-row ">
-                        <p class="proheader">ROLE</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="proheader">ROLE</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <p class="protext">ViralGrowthC.panel</p>
                     </div>
                     <div class="flex-row ">
-                        <p class="proheader">TECH STACK</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="proheader">TECH STACK</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <p class="protext">ViralGrowthC.panel</p>
                     </div>
                     <div class="flex-row ">
-                        <p class="proheader">PLATFORM</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="proheader">PLATFORM</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <p class="protext">ViralGrowthC.panel</p>
                     </div>
                     <div class="flex-row ">
-                        <p class="proheader">DESCRIPTOIN</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <p class="protext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sequi eveniet molestias reiciendis veniam harum, voluptatum nemo. n?</p>
+                        <p class="proheader">DESCRIPTOIN</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <p class="protext desctext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sequi eveniet molestias reiciendis veniam harum, voluptatum nemo. n?</p>
                     </div>
 
                 </div>
@@ -93,6 +113,7 @@ showDivs(n) {
 </script>
 
 <style>
+
 .prowork{
     background-color: #1d1d1d;
     color: white;
@@ -105,31 +126,44 @@ showDivs(n) {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 59%, rgba(0, 0, 0, 0.65) 100%)
 }
 .promain{
-    margin-top: 40px;
+    margin-top: 75px;
 }
 .promain .flex-row{
     align-items: center;
 }
 .promain .jj{
-    height: 222px;
+    height: 250px;
     border-radius: 5px;
 }
 .prodesc{
     width: 490px;
+    align-items: start !important;
+    padding-left: 14px;
+    margin-top: 10px;
 }
 .prodesc .flex-row{
     border-block-end: solid 1px rgb(97, 97, 97);
+}
+.prodesc .flex-row:last-child{
+    border-block-end: none;
+    align-items: start;
 }
 .prodesc .flex-row p{
     margin: 5px 3px;
 }
 .proheader{
-    width: 50px;
-    color: rgb(105, 105, 105);
+    width: 107px;
+color: rgb(105, 105, 105);
+font-size: 125%;
 }
 .protext{
-    width: 210px;
+    width: 261px;
+    font-size: 16px;
 }
+.desctext{
+    font-size: 13px;
+}
+
 @media screen and (max-width: 412px) {
     .proimg{
         height: 50px;
@@ -142,8 +176,14 @@ showDivs(n) {
     }
     .promain .jj{
     height: 195px;
-    width: 67%;
+    width: 81%;
 
+}
+.protext {
+  width: 202px;
+}
+.proheader {
+  width: 107px;
 }
 .smimg{
     flex-direction: column;
@@ -156,23 +196,41 @@ showDivs(n) {
 .prodesc{
     font-size: 67%;
 padding: 10px;
+width: 367px;
 }
 
 }
 /* slider */
 .slider{
-    height: 33px;
+height: 29px;
 padding: 7px;
 background-color: #2d2d2d;
 border-radius: 50%;
 margin: 6px;
-width: 27px;
 }
 .slider:hover{
     cursor:pointer;
 }
 .mySlides {display:none}
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:9px;width:9px;padding:0;margin-top: 5px;
+.w3-left, .w3-right, .w3-badge {cursor:pointer;}
+.w3-badge {height:9px;width:9px;padding:0;margin: 5px 3px;
+}
+.relative{
+position: relative;
+}
+.bottom-left {
+  position: absolute;
+    bottom: 1px;
+    right: 17px;
+    color: rgb(255, 255, 255);
+    z-index: 99;
+}
+.overlay{
+    position: absolute;
+bottom: 0;
+right: 10px;
+width: 91%;
+height: 95%;
+background-image: linear-gradient(rgba(255, 255, 255, 0),rgb(0, 0, 0));
 }
 </style>
