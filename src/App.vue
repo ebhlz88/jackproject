@@ -7,18 +7,18 @@
 </template>
 <script>
 import { defineComponent } from "vue";
-import landing from './pages/landing.vue'
-import about from './pages/about.vue'
-import prowork from './pages/prowork.vue'
-import contact from './pages/contact.vue'
+import landing from "./pages/landing.vue";
+import about from "./pages/about.vue";
+import prowork from "./pages/prowork.vue";
+import contact from "./pages/contact.vue";
 
 export default defineComponent({
   name: "App",
-  components:{
+  components: {
     landing,
     about,
     prowork,
-    contact
-  }
+    contact,
+  },
 });
 </script>
