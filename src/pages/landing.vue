@@ -17,10 +17,10 @@
 
             <div>
               <div id="bar" class="flex">
-                <a href="/">HOME </a>
-                <a href="/">WORK</a>
-                <a href="/">PROJECTS</a>
-                <a href="/">CONTACT</a>
+                <router-link to="/">HOME </router-link>
+                <router-link to="/">WORK</router-link>
+                <router-link to="/">PROJECTS</router-link>
+                <router-link to="/">CONTACT</router-link>
               </div>
             </div>
             <div>
